@@ -1,0 +1,6 @@
+C:\Users\daraks\Documents\Projetos Pessoais de Estudo\Alura.LeilaoOnline\Alura.LeilaoOnline.Coree\bin\Debug\Alura.LeilaoOnline.Coree.dll
+C:\Users\daraks\Documents\Projetos Pessoais de Estudo\Alura.LeilaoOnline\Alura.LeilaoOnline.Coree\bin\Debug\Alura.LeilaoOnline.Coree.pdb
+C:\Users\daraks\Documents\Projetos Pessoais de Estudo\Alura.LeilaoOnline\Alura.LeilaoOnline.Coree\obj\Debug\Alura.LeilaoOnline.Core.csprojAssemblyReference.cache
+C:\Users\daraks\Documents\Projetos Pessoais de Estudo\Alura.LeilaoOnline\Alura.LeilaoOnline.Coree\obj\Debug\Alura.LeilaoOnline.Core.csproj.CoreCompileInputs.cache
+C:\Users\daraks\Documents\Projetos Pessoais de Estudo\Alura.LeilaoOnline\Alura.LeilaoOnline.Coree\obj\Debug\Alura.LeilaoOnline.Coree.dll
+C:\Users\daraks\Documents\Projetos Pessoais de Estudo\Alura.LeilaoOnline\Alura.LeilaoOnline.Coree\obj\Debug\Alura.LeilaoOnline.Coree.pdb

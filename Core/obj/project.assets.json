@@ -8158,9 +8158,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daraks\\Documents\\Projetos Pessoais de Estudo\\Alura.LeilaoOnline\\Core\\Core.csproj",
-      "projectName": "Core",
-      "projectPath": "C:\\Users\\daraks\\Documents\\Projetos Pessoais de Estudo\\Alura.LeilaoOnline\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\daraks\\Documents\\Projetos Pessoais de Estudo\\Alura.LeilaoOnline\\Core\\Alura.LeilaoOnline.Core.csproj",
+      "projectName": "Alura.LeilaoOnline.Core",
+      "projectPath": "C:\\Users\\daraks\\Documents\\Projetos Pessoais de Estudo\\Alura.LeilaoOnline\\Core\\Alura.LeilaoOnline.Core.csproj",
       "packagesPath": "C:\\Users\\daraks\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\daraks\\Documents\\Projetos Pessoais de Estudo\\Alura.LeilaoOnline\\Core\\obj\\",
       "projectStyle": "PackageReference",
