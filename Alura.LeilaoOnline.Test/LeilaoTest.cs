@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Collections.Specialized;
 using Alura.LeilaoOnline.Core;
 using Xunit;
 
@@ -7,45 +10,47 @@ namespace Alura.LeilaoOnline.Tests
     public class LeilaoTest
     {
         [Fact]
-        private static void Leilao_With_Various_Lances()
+        public void Leilao_without_lances()
         {
             //Arranje - cenário
             var leilao = new Leilao("Van Gogh");
-            var fulano = new Interessada("Fulano", leilao);
-            var maria = new Interessada("Maria", leilao);
-
-            leilao.RecebeLance(fulano, 800);
-            leilao.RecebeLance(maria, 900);
-            leilao.RecebeLance(fulano, 1000);
-            leilao.RecebeLance(maria, 950);
 
             //Act - Método sob test
             leilao.TerminaPregao();
 
             //Assert - [Parte a ser Automatizada]
-            var valorEsperado = 1000;
+            var valorEsperado = 0;
             var valorObtido = leilao.Ganhador.Valor;
+
             Assert.Equal(valorEsperado, valorObtido);
 
         }
 
-        [Fact]
-        private static void Leilao_With_One_Lance()
+        [Theory]
+        [InlineData(1200, new double[] { 800, 900, 1000, 1200 })]
+        [InlineData(1000, new double[] { 800, 900, 1000, 990 })]
+        [InlineData(800, new double[] { 800 })]
+
+        public static void Leilao_With_Various_Lance(double valorEsperado, double[] ofertas)
         {
             //Arranje - cenário
             var leilao = new Leilao("Van Gogh");
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
+            var joseph = new Interessada("Joseph", leilao);
 
-            leilao.RecebeLance(fulano, 1000);
+            foreach (var valor in ofertas)
+            {
+                leilao.RecebeLance(fulano, valor);
+            }
 
             //Act - Método sob test
             leilao.TerminaPregao();
 
             //Assert - [Parte a ser Automatizada]
-            var valorEsperado = 1000;
             var valorObtido = leilao.Ganhador.Valor;
             Assert.Equal(valorEsperado, valorObtido);
         }
     }
 }
+
